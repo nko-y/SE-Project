@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/luntan/luntan",
+    "pages/wenzhen/wenzhen",
+    "pages/wode/wode"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#87c7e2",
+    "navigationBarTitleText": "医疗信息服务平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor": "#0088FF",
+    "color": "#A1A3A5",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list":[
+      {
+        "pagePath": "pages/luntan/luntan",
+        "text": "论坛",
+        "iconPath": "images/tabBar/luntan.png",
+        "selectedIconPath": "images/tabBar/luntanp.png"
+      },
+      {
+        "pagePath": "pages/wenzhen/wenzhen",
+        "text": "问诊",
+        "iconPath": "images/tabBar/wenzhen.png",
+        "selectedIconPath": "images/tabBar/wenzhenp.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "images/tabBar/wode.png",
+        "selectedIconPath": "images/tabBar/wodep.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

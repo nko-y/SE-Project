@@ -1,0 +1,41 @@
+<!--components/onePost/onePost.wxml-->
+<view class="all">
+
+  <view class="title">{{item.title}}</view>
+
+  <view class="mainPart">
+    <view class="mainLeft">
+      <!-- 个人信息 -->
+      <view class="userInformation">
+        <view class="userPic">
+          <image src="{{item.userSrc}}" class="theImg"></image>
+        </view>
+        <view class="userName">
+          {{item.userName}}
+        </view>
+      </view> 
+      <!-- 主要内容    -->
+      <view class="containPart">
+        <view class="containPassage">{{item.contain}}</view>
+      </view>      
+    </view>
+
+    <view class="mainRight">
+      <image class="containImg" mode="aspectFill" src="{{item.containPic}}"></image>
+    </view>
+  </view>
+
+
+
+  <view class="bottomOnes">
+    <view class="theTime">2020-02-05</view>
+    <view class="theOther">
+      <view class="iconText">{{item.love}}</view>
+      <image class="iconImg" src="../../images/luntan/love.svg"></image>
+      <view style="width:20rpx"></view>
+      <view class="iconText">{{item.save}}</view>
+      <image class="iconImg" src="../../images/luntan/save.svg"></image>
+    </view>
+  </view>
+
+</view>

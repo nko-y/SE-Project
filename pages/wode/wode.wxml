@@ -1,0 +1,97 @@
+<!--pages/wode/wode.wxml-->
+
+<view class="all">
+
+<view class="fmessage">
+  <open-data type="userAvatarUrl" wx:if="{{isRegister}}"></open-data>
+  <image class="noPhoto" wx:else src="../../images/wode/unreg.png"></image>
+  <view class="faccount">
+    <open-data type="userNickName" lang="zh_CN" wx:if="{{isRegister}}"></open-data>
+      <view wx:else class="signIn">
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo" class="bt">点击登录账户</button>
+      </view>
+    <view class="infoall">
+      <view class="integralInfo" wx:if="{{isRegister}}">信用值:{{allIntegral}}</view>
+      <view class="integralInfo" wx:else></view>
+      <view wx:if="{{whetherCert==true && isRegister}}" class="integralInfo">已认证</view>
+      <view wx:elif="{{isRegister}}" class="integralInfo">未认证</view>
+      <view wx:else class="integralInfo"></view>
+    </view>
+  </view>
+  <image class="detailIdInfo" src="../../images/wode/arrow-circle-right-outline.svg" bindtap="turntoPersonalInfo"></image>
+</view>
+
+
+<view class="inconcontain">
+  <view class="oneblock" bindtap="turnToemail">
+    <view wx:if="{{withMessage==true}}"><image src="../../images/wode/informationdot.svg" class="oneIcon"></image></view>
+    <view wx:else><image src="../../images/wode/information.svg" class="oneIcon"></image></view>
+    <view class="oneFont">我的消息</view>
+  </view>
+  <view class="oneblock">
+    <view><image src="../../images/wode/wenzhen.svg" class="oneIcon" bindtap="toMyBookShelf"></image></view>
+    <view class="oneFont">问诊记录</view>
+  </view>
+  <view class="oneblock" bindtap="toMyReleases">
+    <view><image src="../../images/wode/myrelease.svg" class="oneIcon"></image></view>
+    <view class="oneFont">我的发布</view>
+  </view>
+  <view class="oneblock" bindtap="toMyRecords">
+    <view bindtap="handleClickCollection"><image src="../../images/wode/guanzhu.svg" class="oneIcon"></image></view>
+    <view class="oneFont">关注/收藏</view>
+  </view>
+</view>
+
+
+<view class="itemList">
+  <view class="oneline"></view>
+  <view class="oneitem" bindtap="toQuest">
+    <view class="pic"><image src="../../images/wode/certQues.svg" class="oneIcon"></image></view>
+    <view class="thename">认证问卷</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+  <view style="height:4rpx;"></view>
+  <view class="oneitem" bindtap="turntoPersonalInfo">
+    <view class="pic"><image src="../../images/wode/myinfo.svg" class="oneIcon"></image></view>
+    <view class="thename">个人信息</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+
+  <view class="oneline"></view>
+  <view class="oneitem" bindtap="toApplication">
+    <view class="pic"><image src="../../images/wode/managewenzhen.svg" class="oneIcon"></image></view>
+    <view class="thename">问诊管理</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+  <view style="height:4rpx;"></view>
+  <view class="oneitem" bindtap="toHistory">
+    <view class="pic"><image src="../../images/wode/browserTime.svg" class="oneIcon"></image></view>
+    <view class="thename">浏览历史</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+  <view style="height:4rpx;"></view>
+  <view class="oneitem" bindtap="toGuide">
+    <view class="pic"><image src="../../images/wode/guide.svg" class="oneIcon"></image></view>
+    <view class="thename">使用指南</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+  <view style="height:4rpx;"></view>
+
+  <button class="oneitemButton" open-type="contact" style="width:100%;position:static;display: flex;">
+  <view class="pic"><image src="../../images/wode/connectToUs.svg" class="oneIcon"></image></view>
+    <view class="thename" open-type="contact">联系我们</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </button>
+
+  <view class="oneline"></view>
+  <view class="oneitem" bindtap="toNotice">
+    <view class="pic"><image src="../../images/wode/notice.svg" class="oneIcon"></image></view>
+    <view class="thename">公告</view>
+    <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
+  </view>
+  
+  <view class="oneline"></view>
+</view>
+
+</view>
+

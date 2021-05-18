@@ -1,0 +1,187 @@
+/* pages/wode/wode.wxss */
+page{
+  height: 100%;
+  background-color: #87c7e2;
+}
+
+
+.all{
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 80rpx;
+  border-top-left-radius: 80rpx;
+}
+
+.fmessage{
+  display: flex;
+  flex: row;
+  align-items: center;
+  height: 180rpx;
+}
+
+open-data[type="userAvatarUrl"]{
+  margin-left: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.noPhoto{
+  margin-left: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.signIn{
+  font-weight: bold;
+  background-color: #87c7e2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  color:#999999;
+  width: 70%;
+}
+
+.faccount{
+  width: 60%;
+  margin-left: 20rpx;
+}
+
+.signIn{
+  font-weight: bold;
+  background-color: #c1d2f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  color:#999999;
+  width: 70%;
+}
+
+.infoall{
+  margin-top: 5rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.integralInfo{
+  margin-right: 10rpx;
+  width: 30%;
+  font-size:20rpx;
+  color:#999999;
+  background-color: #c1d2f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+}
+
+.detailIdInfo{
+  width: 10%;
+  height: 30%;
+}
+
+.inconcontain{
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.oneblock{
+  width: 25%;
+  font-size: 24rpx;
+}
+
+.oneIcon{
+  width:55rpx;
+  height:55rpx;
+  z-index:1;
+}
+
+.oneFont{
+  height: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #444444;
+  font-weight: bold;
+}
+
+.itemList{
+  height: 80vh;
+  background-color: whitesmoke;
+}
+
+.oneline{
+  height: 20rpx;
+}
+
+.littleline{
+  height: 2rpx;
+}
+
+.oneitem{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 110rpx;
+  align-items: center;
+}
+
+.oneitemButton{
+  background-color: #ffffff;
+  flex-direction: row;
+  height: 110rpx;
+  align-items: center;
+  border-radius:0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+button::after {
+  border: none;
+}
+
+.thename{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #444444;
+  width: 40%;
+  padding-left: 20rpx;
+}
+
+.pic{
+  width: 100rpx;
+  text-align: center;
+}
+
+.rightword{
+  width: 41%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.textword{
+  width: 40%;
+  height: 40%;
+}
+
