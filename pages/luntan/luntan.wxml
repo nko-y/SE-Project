@@ -1,6 +1,6 @@
 <!--pages/luntan/luntan.wxml-->
-
-<view class="searchTab">
+<!--顶层搜索栏模块 -->
+<view class="searchTab"> 
   <view class="pic" bindtap="turnToPersonInfo">
     <open-data type="userAvatarUrl" wx:if="{{isRegister}}"></open-data>
     <image wx:else src="../../images/luntan/unreg.png" class="unreg"></image>
@@ -15,7 +15,7 @@
     <image wx:else class='emailIcon'  src='../../images/luntan/infoemail.svg' ></image>
   </view>
 </view>
-
+<!-- 各个科室版面 -->
 <view class="chooseView">
   <scroll-view class="scroll-view_H" scroll-x="true">
       <view class="itemType" wx:for="{{typeList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
@@ -34,12 +34,14 @@
       </view>
   </scroll-view>
 </view>
-
+<!--中间的各个帖子 -->
 <view class="allPost">
   <view wx:for="{{allPosts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
     <onePost item="{{item}}"/>
   </view>
 </view>
 
-<!-- 新建按钮 -->
-<image src="../../images/luntan/create.svg" class="fixedButton" catchtap="createNewFolder"></image>
+<!-- 右下角的新建帖子按钮 fixedButton类用于wxss中设置样式-->
+<!-- 除 bind 外，也可以用 catch 来绑定事件。与 bind 不同， catch 会阻止事件向上冒泡(不会传递给父节点)。 -->
+<image src="../../images/luntan/create.svg" class="fixedButton" catchtap="createNewPost" ></image>
+

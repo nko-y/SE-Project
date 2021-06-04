@@ -2,7 +2,8 @@
   "pages":[
     "pages/luntan/luntan",
     "pages/wenzhen/wenzhen",
-    "pages/wode/wode"
+    "pages/wode/wode",
+    "pages/newpost/newpost"
   ],
   "window":{
     "backgroundTextStyle": "dark",

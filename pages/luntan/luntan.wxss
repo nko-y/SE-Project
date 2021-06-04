@@ -126,6 +126,6 @@ open-data[type="userAvatarUrl"]{
   position: fixed;
   width: 100rpx;
   height: 100rpx;
-  bottom: 40rpx;
+  bottom: 100rpx;
   right: 70rpx;
 }

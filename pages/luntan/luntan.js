@@ -96,5 +96,12 @@ Page({
       else tempList[i].isSelect = true
     }
     this.setData({typeList: tempList})
+  },
+  createNewPost:function(event) {
+    wx.navigateTo({
+ 
+      url: '/pages/newpost/newpost',
+ 
+      })
   }
 })

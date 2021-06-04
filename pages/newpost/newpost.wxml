@@ -1,0 +1,26 @@
+<!--pages/newpost/newpost.wxml-->
+<view class="container">
+  <view class="chooseboard flex-wrp">
+    <text class="boardtext flex-item">板块分区:</text>
+    <radio-group class="radio">
+        <radio value="r1" checked="{{checked1}}"/>疾病科普
+        <radio value="r2" checked="{{checked2}}"/>寻求帮助
+        <radio value="r3" checked="{{checked3}}"/>经历分享
+    </radio-group>
+  </view>
+
+  <view class="title">
+    <input auto-focus placeholder="输入帖子标题"/>
+  </view>
+  
+  <view class="editpost">
+    <textarea maxlength="-1" placeholder="输入帖子内容"/>
+  </view>
+  
+  <image class="add_image" src="../../images/editpost/add_image.svg"></image>
+  
+  <view>
+    <button type="primary">提交</button>
+  </view>
+  
+</view>
