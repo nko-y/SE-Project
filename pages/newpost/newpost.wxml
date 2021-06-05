@@ -20,7 +20,7 @@
   <image class="add_image" src="../../images/editpost/add_image.svg"></image>
   
   <view>
-    <button type="primary">提交</button>
+    <button type="primary" catchtap="submit">选择科室并提交</button>
   </view>
   
 </view>

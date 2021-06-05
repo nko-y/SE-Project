@@ -1,0 +1,69 @@
+<!--pages/chooseboard/chooseboard.wxml-->
+<scroll-view >
+  <text class="dieases">常见科室</text>
+  <view class="section">
+    <view class="tui-table-view">
+      <view class="tui-col-3">
+        <image src="/images/board/皮肤科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit" catchtap="checkClick" data-id="pifu"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/妇科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        catchtap="checkClick" data-id="fuke"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/儿科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/泌尿外科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/骨科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/消化内科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/口腔科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/耳鼻咽喉科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/产科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+  <text class="dieases">内科</text>
+  <view class="tui-table-view">
+      <view class="tui-col-3">
+        <image src="/images/board/普通内科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/内分泌科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>>
+      <view class="tui-col-3">
+        <image src="/images/board/心血管内科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+  </view>
+  <text class="dieases">其他</text>
+  <view class="tui-table-view">
+      <view class="tui-col-3">
+        <image src="/images/board/普外科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/精神心理科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/美容整形科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/性病科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/眼科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+      <view class="tui-col-3">
+        <image src="/images/board/肿瘤科.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"></image>
+      </view>
+  </view>
+</scroll-view>

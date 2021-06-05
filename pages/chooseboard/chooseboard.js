@@ -1,4 +1,4 @@
-// pages/newpost/newpost.js
+// pages/chooseboard/chooseboard.js
 Page({
 
   /**
@@ -63,10 +63,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  submit:function(event){
-    wx.navigateTo({
-      url: '/pages/chooseboard/chooseboard',
-    })
+  checkClick(e){
+    console.log(e.target.dataset["id"]);
   }
 })
