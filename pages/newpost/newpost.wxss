@@ -1,4 +1,6 @@
+@import "./assets/iconfont.wxss";
 /* pages/newpost/newpost.wxss */
+
 .flex-wrp{
   display: flex;
 }
@@ -37,7 +39,7 @@
   font-size: small;
   font-weight: bold;
   text-align: center;
-  transform:scale(0.8);
+  transform:scale(0.9);
 }
 .title{
   width: 100%;
@@ -45,12 +47,42 @@
   border-width: thin;
   border-color: gainsboro;
   height: 60rpx;
+  font-size: 15px;
+  padding: 6px;
   margin-top: 5rpx;
 }
 .editpost{
   width: 100%;
-  height: 500rpx;
+  height: 900rpx;
 }
+.ql-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #ECECEC;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ECECEC;
+  border-left: none;
+  border-right: none;
+}
+
 .add_image{
   position: fixed;
   width: 120rpx;
