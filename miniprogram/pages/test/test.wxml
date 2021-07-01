@@ -1,0 +1,46 @@
+<form bindsubmit="saveForm">
+
+<!-- 相机 -->
+<view class="Pic" bindtap="getPic">
+ <image src="{{picSrc}}"  class="{{hasPic ? 'none': 'inPic'}}" mode="{{hasPic?'aspectFill':'aspectFit'}}"></image>
+</view>
+
+<!-- 日期 -->
+<view class="dateLine">
+  <image src="../../images/wenzhen/rili.svg" class="datePic"></image>
+  <view class="theDate">{{formateDate}}</view>
+</view>
+
+<!-- 姓名 -->
+<view class="title">
+  <view class="titleName">标题</view>
+  <view class="titleText"><input name="NameInput" placeholder="帖子标题" maxlength="17" placeholder-style="color:#999999" value="{{nameValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 医院 -->
+<view class="title">
+  <view class="titleName">主题</view>
+  <view class="titleText"><input name="hosInput" placeholder="所属主题" maxlength="17" placeholder-style="color:#999999" value="{{hosValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 科室 -->
+<view class="title">
+  <view class="titleName">标签</view>
+  <view class="titleText"><input name="departInput" placeholder="请点击选择相关标签" maxlength="17" placeholder-style="color:#999999" value="{{departValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 补充信息 -->
+<view class="titleTwo">
+  <view class="titleName">内容</view>
+  <textarea name="detailInput" class="textArea" maxlength="2000" value="{{detailValue}}"></textarea>
+</view>
+<view class="hr"></view>
+<view style="height:50rpx"></view>
+
+<!-- 提交信息按钮 -->
+<button class="saveButton" form-type="submit" size="mini">发布</button>
+
+</form>

@@ -1,0 +1,43 @@
+<form bindsubmit="saveForm">
+
+<!-- 日期 -->
+<view class="dateLine">
+  <image src="../../images/wenzhen/rili.svg" class="datePic"></image>
+  <view class="theDate">{{formateDate}}</view>
+</view>
+<view class="hr"></view>
+
+<!-- 姓名 -->
+<view class="title">
+  <view class="titleName">您的姓名</view>
+  <view class="titleText"><input name="nameInput" maxlength="20" placeholder-style="color:#999999" value="{{nameValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 联系方式 -->
+<view class="title">
+  <view class="titleName">联系方式</view>
+  <view class="titleText"><input name="contactInput" maxlength="20" placeholder-style="color:#999999" value="{{contactValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 其他有关个人信息 -->
+<view class="titleTwo">
+  <view class="titleName">其他相关信息</view>
+  <textarea name="infoInput" class="textArea" maxlength="2000" value="{{infoValue}}"></textarea>
+</view>
+<view class="hr"></view>
+
+<!-- 症状描述 -->
+<view class="titleTwo">
+  <view class="titleName">症状描述</view>
+  <textarea name="symptomInput" class="textArea" maxlength="2000" value="{{symptomValue}}"></textarea>
+</view>
+<view class="hr"></view>
+
+<!-- 提交按钮 -->
+<view class="forButton">
+  <button class="saveButton" form-type="submit" size="mini">预约申请</button>
+</view>
+
+</form>

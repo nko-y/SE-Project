@@ -1,0 +1,43 @@
+<loading hidden="{{!isLoading}}">正在加载</loading>
+
+<form bindsubmit="saveForm" wx:if="{{!isLoading}}">
+  <view class="tips">个人信息<view wx:if="{{from=='orderPage'}}">[至少填写一项]</view></view>
+  <view class="oneContactWay">
+    <view class="title">微信:</view>
+    <input class="inputText" name="weixin" value="{{weixinValue}}"></input>
+  </view>
+
+  <view class="oneBar"></view>
+
+  <view class="oneContactWay">
+    <view class="title">QQ:</view>
+    <input class="inputText" name="QQ" value="{{QQValue}}"></input>
+  </view>
+
+  <view class="oneBar"></view>
+
+  <view class="oneContactWay">
+    <view class="title">邮箱:</view>
+    <input class="inputText" name="email" value="{{emailValue}}"></input>
+  </view>
+
+  <view style="height:40rpx"></view>
+
+  <view class="oneContactWay">
+    <view class="title">标签:</view>
+    <input class="inputText" name="address" value="{{addressValue}}"></input>
+  </view>
+
+  <view style="height:40rpx"></view>
+  <view class="tips">备注信息</view>
+
+  <view class="extraInfo">
+    <textarea class="texta" name="traInfo" maxlength="2000" value="{{extraInfoValue}}"></textarea>
+  </view>
+
+  <view style="height:40rpx"></view>
+  <view class="containButton">
+    <view style="height:100%;width:70%"></view>
+    <button class="saveButton" form-type="submit" size="mini">确认</button>
+  </view>
+</form>

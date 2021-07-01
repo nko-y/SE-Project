@@ -1,0 +1,87 @@
+/* pages/questionnaire/questionnaire.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.Pic{
+  width: 100%;
+  height: 525rpx;
+  background-color: #E9E9E9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inPic{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.none{
+  width: 100%;
+  height: 100%;
+}
+
+.dateLine{
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  color: lightgray;
+}
+
+.datePic{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  width: 90%;
+}
+
+.titleName{
+  margin-right: 60rpx;
+  font-weight: bold;
+}
+
+.titleText{
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hr{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+  width: 90%;
+  margin:0 auto;
+}
+
+.titleTwo{
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  width: 90%;
+}
+
+.textArea{
+  color:#444444;
+  margin-top:20rpx;
+  height:150rpx;
+}
+
+.saveButton{
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  background-color: #87c7e2;
+  color: white;
+}

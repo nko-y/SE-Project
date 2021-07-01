@@ -1,0 +1,45 @@
+<!--pages/luntan/luntan.wxml-->
+
+<view class="searchTab">
+  <view class="pic" bindtap="turnToPersonInfo">
+    <open-data type="userAvatarUrl" wx:if="{{isRegister}}"></open-data>
+    <image wx:else src="../../images/luntan/unreg.png" class="unreg"></image>
+  </view>
+  <view class="search">
+     <image src="../../images/luntan/search.svg"></image>
+     <input type='text' placeholder='输入想要查找的内容' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='clickSearch' bindinput=""></input>
+  </view>
+  <view class="pic" bindtap="turnToemail">
+    <image wx:if="{{!isRegister}}" class='emailIcon'  src='../../images/luntan/email.svg'></image>
+    <image wx:elif="{{!message}}" class='emailIcon'  src='../../images/luntan/email.svg'></image>
+    <image wx:else class='emailIcon'  src='../../images/luntan/infoemail.svg' ></image>
+  </view>
+</view>
+
+<view class="chooseView">
+  <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="itemType" wx:for="{{typeList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <view class="inView" bindtap="changeTab" data-index="{{index}}">
+          <view class="tT" wx:if="{{item.isSelect}}" style="color:#1296db">{{item.name}}</view>
+          <view class="tT" wx:else>{{item.name}}</view>
+
+          <view class="downBar" wx:if="{{item.isSelect}}">
+            <image src="../../images/luntan/line.png" class="barImg"></image>
+          </view>
+          <view class="downBar" wx:else>
+            <image src="../../images/luntan/lineW.png" class="barImg"></image>
+          </view>
+          
+        </view>
+      </view>
+  </scroll-view>
+</view>
+
+<view class="allPost">
+  <view wx:for="{{allPosts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <onePost item="{{item}}" data-index="{{index}}" bindtap="bindItemTap"/>
+  </view>
+</view>
+
+<!-- 新建按钮 -->
+<image src="../../images/luntan/create.svg" class="fixedButton" catchtap="createNewPost"></image>

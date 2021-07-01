@@ -1,0 +1,131 @@
+/* pages/luntan/luntan.wxss */
+page{
+  height: 100%;
+}
+
+.searchTab{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.pic{
+  width: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.unreg{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+open-data[type="userAvatarUrl"]{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.search{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: white;
+}
+
+.search input{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+}
+
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-left:20rpx;
+  display: inline-block;
+  vertical-align:middle;
+  margin-right: 20rpx;
+}
+
+.emailIcon{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.chooseView{
+  width: 100%;
+  height: 70rpx;
+  margin-top: 5rpx;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.itemType{
+  display: inline-block;
+  width: 125rpx;
+  height: 100%;
+  margin-left: 10rpx;
+}
+
+.inView{
+  width: 100%;
+  height: 100%;
+}
+
+.tT{
+  width: 100%;
+  height: 70%;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.downBar{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.barImg{
+  width: 30%;
+  height: 100%;
+}
+
+
+
+
+
+.allPost{
+  width: 100%;
+  margin-top: 5rpx;
+}
+
+.fixedButton{
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 40rpx;
+  right: 70rpx;
+}

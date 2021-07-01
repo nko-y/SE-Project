@@ -1,0 +1,36 @@
+<!--components/oneDoctor/oneDoctor.wxml-->
+<view class="all">
+  <view class="leftPart">
+    <image src="{{item.docScr}}"></image>
+  </view>
+
+
+  <view class="rightPart">
+    <view class="onePart">
+      <view class="itsname">{{item.docName}}</view>
+      <view class="position">{{item.docPosition}}</view>
+      <view class="tagFirst" wx:if="{{item.isFirstClass}}">三甲</view>
+    </view>
+
+    <view class="twoPart">
+      <view class="master">{{item.master}}</view>
+      <view class="master">{{item.from}}</view>
+    </view>
+
+    <view class="threePart">擅长疾病:{{item.goodAt}}</view>
+
+    <view class="fourPart">补充说明:{{item.claim}}</view>
+
+    <view class="fivePart">
+      <image class="starImg" src="../../images/wenzhen/star.svg"></image>
+      <view class="starText">{{item.starNum}}</view>
+      <view wx:for="{{item.relateTag}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <view class="relateTagText">{{item}}</view>
+      </view>
+    </view>
+
+    <view class="sixPart">
+      <view class="appointButton" bindtap="turnToDoctor">预约</view>
+    </view>
+  </view>
+</view>

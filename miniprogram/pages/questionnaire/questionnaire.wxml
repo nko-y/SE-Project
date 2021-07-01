@@ -1,0 +1,72 @@
+<form bindsubmit="saveForm">
+
+<!-- 相机 -->
+<view class="Pic" bindtap="getPic">
+ <image src="{{picSrc}}"  class="{{hasPic ? 'none': 'inPic'}}" mode="{{hasPic?'aspectFill':'aspectFit'}}"></image>
+</view>
+
+<!-- 日期 -->
+<view class="dateLine">
+  <image src="../../images/wenzhen/rili.svg" class="datePic"></image>
+  <view class="theDate">{{formateDate}}</view>
+</view>
+
+<!-- 姓名 -->
+<view class="title">
+  <view class="titleName">姓名</view>
+  <view class="titleText"><input name="NameInput" placeholder="您的名字" maxlength="17" placeholder-style="color:#999999" value="{{nameValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 职位 -->
+<view class="title">
+  <view class="titleName">职称</view>
+  <view class="titleText"><input name="posInput" placeholder="所处职称" maxlength="17" placeholder-style="color:#999999" value="{{posValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 科室 -->
+<view class="title">
+  <view class="titleName">科室</view>
+  <view class="titleText"><input name="departInput" placeholder="主治科室" maxlength="17" placeholder-style="color:#999999" value="{{departValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 位置 -->
+<view class="title">
+  <view class="titleName">位置</view>
+  <view class="titleText">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view wx:if="{{region[0]==''}}" style="color:#999999">请选择所在的地区</view>
+      <view wx:else>{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+    </picker>
+  </view>
+</view>
+<view class="hr"></view>
+
+<!-- 医院 -->
+<view class="title">
+  <view class="titleName">医院</view>
+  <view class="titleText"><input name="hosInput" placeholder="当前工作地点" maxlength="17" placeholder-style="color:#999999" value="{{hosValue}}"></input></view>
+</view>
+<view class="hr"></view>
+
+<!-- 擅长领域 -->
+<view class="titleTwo">
+  <view class="titleName">擅长领域</view>
+  <textarea name="expertiseInput" class="textArea" maxlength="2000" value="{{expertiseValue}}"></textarea>
+</view>
+<view class="hr"></view>
+
+<!-- 补充信息 -->
+<view class="titleTwo">
+  <view class="titleName">补充信息</view>
+  <textarea name="detailInput" class="textArea" maxlength="2000" value="{{detailValue}}"></textarea>
+</view>
+<view class="hr"></view>
+<view style="height:50rpx"></view>
+
+<!-- 提交信息按钮 -->
+<button class="saveButton" form-type="submit" size="mini">申请</button>
+
+</form>

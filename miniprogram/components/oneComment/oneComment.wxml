@@ -1,0 +1,32 @@
+<!--components/oneComment.wxml-->
+
+
+
+<!-- 用户信息 -->
+<view class="userInformation">
+  <view class="userPic">
+    <image src="{{certainComment.userSrc}}" class="theImg"></image>
+  </view>
+  <view class="infoText">
+    <view class="userName">
+      {{certainComment.userName}}
+    </view>
+    <view class="postTime">
+      {{certainComment.postTime}}
+    </view>
+  </view>
+</view> 
+<!-- 评论内容 -->
+<view class="comment-content">
+  <text>
+    你好啊，这里是评论
+  </text>
+</view>
+<!-- 点赞按钮 -->
+<view class="operation-panel">
+    <view class="like-icon-text">10</view>
+    <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
+</view>
+<!-- 分割线 -->
+<view class="small-padding-line">
+</view>

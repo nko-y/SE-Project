@@ -1,0 +1,77 @@
+/* pages/personInformation/personInformation.wxss */
+page{
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+}
+
+.tips{
+  width: 100%;
+  height: 40rpx;
+  font-size: 25rpx;
+  color: #555555;
+  display: flex;
+  margin-left: 5rpx;
+  margin-top: 20rpx;
+}
+
+.oneContactWay{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  width: 12%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.inputText{
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin-left: 4%;
+}
+
+.oneBar{
+  height: 4rpx;
+}
+
+.extraInfo{
+  width: 100%;
+  height: 300rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.texta{
+  width: 94%;
+  height: 90%;
+  color: #444444;
+}
+
+.saveButton{
+  background-color: #87c7e2;
+  color: white;
+}
+
+.containButton{
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

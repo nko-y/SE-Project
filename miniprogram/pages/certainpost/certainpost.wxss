@@ -1,0 +1,235 @@
+/* miniprogram/pages/certainpost.wxss */
+
+.container {
+  padding: 0;
+  font-size: 14rpx;
+  background: #ffffff;
+  color: #000;
+}
+
+.title {
+  position: center;
+  padding: 30rpx 25rpx 25rpx 25rpx;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 38rpx;
+  line-height: 48rpx;
+}
+
+.userInformation{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.userPic{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theImg{
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+}
+
+.infoText{
+  display: flex;
+  flex-direction: column;
+}
+
+.userName{
+  width: 100%;
+  height: 50%;
+  margin: 0%;
+  /* margin-left: 5rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25rpx;
+  /* font-weight: bold; */
+  color: #D8977E;
+}
+
+.postTime{
+  width: 100%;
+  height: 50%;
+  /* margin-left: 5rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25rpx;
+  /* font-weight: bold; */
+  color: #7e7e7e;
+}
+
+.firstFloor{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+
+.userInformation{
+  width: 100%;
+  height: 75rpx;
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+}
+
+.flex-wrp{
+  display: flex;
+}
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.post-content{
+  margin: 0%;
+  padding: 0rpx 30rpx;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.post-content text{
+  margin: 0%;
+  padding: 20rpx 0rpx;
+  font-size: 28rpx;
+  color: #000000;
+  line-height: 44rpx;
+  display: flex;
+  flex-direction: column;
+}
+.post-content image{
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.operation-panel{
+  padding: 5rpx 40rpx 5rpx 0rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 50rpx;
+}
+
+.like-icon-text{
+  font-size: 26rpx;
+  color: #999999;
+}
+
+.like-icon-img{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 5rpx;
+}
+
+
+
+.post-footer{
+  position: fixed;
+  bottom: 0;
+  height: 55rpx;
+  border-top: solid 1px #ebebeb;
+  background: #ffffff;
+  width: 100%;
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.post-footer .good image{
+  display: inline-block;
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+}
+.post-footer .operation-wrp{
+  flex: 5;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0rpx 30rpx 0 0;
+}
+.post-footer .operation{
+  justify-content: space-between;
+  padding: 0 0 0 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.post-footer .operation-btn{
+  flex: 1;
+  padding: 0 50rpx 0 30rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.post-footer .operation image{
+  display: block;
+  margin: 0 auto;
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.post-footer .operation-btn text{
+  display: block;
+  font-size: 14rpx;
+  color: #bebebe;
+}
+
+/* 普通的灰色的分隔 */
+.padding-line {
+  position: center;
+  /* padding: 30rpx; */
+  /* margin: 30rpx 0 0 0; */
+  height: 20rpx;
+  background: rgb(238, 238, 238);
+}
+
+/* 非常细的灰色的分隔 */
+.small-padding-line {
+  position: center;
+  /* padding: 30rpx; */
+  height: 3rpx;
+  background: rgb(238, 238, 238);
+}
+
+/* “全部回复”的标题栏 */
+.comment-panel {
+  /* padding: 60rpx; */
+  /* height: 60rpx; */
+  line-height: 75rpx;
+  padding: 0rpx 30rpx 0rpx 30rpx;
+  font-size: 28rpx;
+}
+
+.allComment{
+  width: 100%;
+  /* margin-top: 10rpx; */
+}
+
+.oneComment{
+  width: 100%;
+  padding: 30rpx 0 20rpx 0;
+  /* margin-top: 30rpx;
+  margin-bottom: 20rpx; */
+}
+
+.standView{
+  width: 100%;
+  height: 100rpx;     /*  自定义一下需要的高度 */
+  /* background-color: black; */
+}

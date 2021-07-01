@@ -1,0 +1,70 @@
+<!--miniprogram/pages/certainpost.wxml-->
+<view class="container">
+    <!-- 标题 -->
+    <view class="title">
+        <text class="title-text">{{certainPost.title}}</text>
+    </view>
+    <!-- 用户信息 -->
+    <view class="userInformation">
+        <view class="userPic">
+          <image src="{{certainPost.userSrc}}" class="theImg"></image>
+        </view>
+        <view class="infoText">
+            <view class="userName">
+                {{certainPost.userName}}
+            </view>
+            <view class="postTime">
+                {{certainPost.postTime}}
+            </view>
+        </view>
+    </view> 
+
+    <view class="post-content">
+        <text>{{certainPost.contain}}</text>
+        <image src="{{certainPost.containPic}}"></image>
+    </view>
+
+    <view class="operation-panel">
+        <view class="like-icon-text">10</view>
+        <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
+        <view style="width:25rpx"></view>
+        <view class="like-icon-text"> 评论</view>
+        <image class="like-icon-img" style="padding:0rpx 8rpx 0rpx 0rpx" src="../../images/certainpost/comment.svg"></image>
+    </view>
+
+    <view class="padding-line">
+    </view>
+
+    <view class="comment-panel">
+        全部回复
+    </view>
+
+    <view class="small-padding-line">
+    </view>
+
+    <view class="allComment">
+        <oneComment certainComment="{{certainPost}}"/>
+        <oneComment certainComment="{{certainPost}}"/>
+        <oneComment certainComment="{{certainPost}}"/>
+    </view>
+    
+
+    <!-- 防止footer遮盖内容 -->
+    <view class="standView"></view>
+
+    <view class="post-footer flex-wrp">
+        <view class="operation-wrp flex-item">
+            <view class="operation flex-wrp flex-tab">
+                <view class="operation-btn flex-item">
+                    <image src="../../images/certainpost/comment2.svg"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    
+
+
+
+</view>
+
