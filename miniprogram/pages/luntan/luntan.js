@@ -156,15 +156,14 @@ Page({
     console.log(e)
   },
 
-    // 事件处理函数
-    bindItemTap: function(e) {
-      console.log(e);
-      wx.navigateTo({
-        url: '/pages/certainpost/certainpost?index='+e.currentTarget.dataset.index,
-      });
-  
-    },
+  // 事件处理函数
+  bindItemTap: function(e) {
+    console.log(e);
+    wx.navigateTo({
+      url: '/pages/certainpost/certainpost?index='+e.currentTarget.dataset.index,
+    });
 
+  },
 
   createNewPost:function(event) {
     wx.navigateTo({

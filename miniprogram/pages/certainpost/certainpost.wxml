@@ -28,8 +28,8 @@
         <view class="like-icon-text">10</view>
         <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
         <view style="width:25rpx"></view>
-        <view class="like-icon-text"> 评论</view>
-        <image class="like-icon-img" style="padding:0rpx 8rpx 0rpx 0rpx" src="../../images/certainpost/comment.svg"></image>
+        <view class="like-icon-text" bindtap="bindCommentTap"> 评论</view>
+        <image class="like-icon-img" style="padding:0rpx 8rpx 0rpx 0rpx" src="../../images/certainpost/comment.svg" bindtap="bindCommentTap"></image>
     </view>
 
     <view class="padding-line">
@@ -56,15 +56,11 @@
         <view class="operation-wrp flex-item">
             <view class="operation flex-wrp flex-tab">
                 <view class="operation-btn flex-item">
-                    <image src="../../images/certainpost/comment2.svg"></image>
+                    <image src="../../images/certainpost/comment2.svg" bindtap="bindCommentTap"></image>
                 </view>
             </view>
         </view>
     </view>
-
-    
-
-
 
 </view>
 

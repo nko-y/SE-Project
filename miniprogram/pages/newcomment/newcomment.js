@@ -1,24 +1,18 @@
-// miniprogram/pages/certainpost.js
-var testList = require("../../Data/postData.js")
-
+// miniprogram/pages/newcomment/newcomment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    certainPost: {},
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var index = options.index;
-    console.log(index); // 帖子的index
-    this.setData({
-      certainPost: testList.postData[index],
-    })
+
   },
 
   /**
@@ -68,14 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  // 添加评论：跳转至评论编辑页面
-  bindCommentTap: function() {
-    wx.navigateTo({
-      url: '/pages/newcomment/newcomment',
-    });
-
-  },
-
+  }
 })
