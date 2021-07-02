@@ -11,6 +11,9 @@ Page({
     pcontent:null,
     type:null,
     board:null,
+
+    NowUserNickName: null,
+    NowUserUrl: null,
   },
 
   /**
@@ -21,10 +24,14 @@ Page({
       title: options.title,
       pcontent:decodeURIComponent(options.pcontent),
       type:options.type,
+      NowUserNickName: options.NowUserNickName,
+      NowUserUrl: options.NowUserUrl
     });
     console.log(this.data.title);
     console.log(this.data.pcontent);
     console.log(this.data.type)
+    console.log(this.data.NowUserNickName)
+    console.log(this.data.NowUserUrl)
   },
 
   /**
@@ -106,11 +113,11 @@ Page({
       str=str.replace(rex,"")
       n = str.search(rex);
     }
-    console.log(this.data.picpath)
     db.collection('post').add({
       data:{
         user_id: user_id,
-        user_name: user_name,
+        user_name: that.data.NowUserNickName,
+        user_img: that.data.NowUserUrl,
         post_id: post_id,
         post_title:title,
         post_time:uploadTime,
@@ -157,5 +164,5 @@ Page({
       // handle error
     })
     */
-  }
+  },
 })

@@ -298,6 +298,9 @@ Page({
     .catch(err=>{
       console.log(err)
     })
+    wx.navigateBack({
+      delta: 2
+    })
   },
 
   uploadOneFile: async function(photoPath){

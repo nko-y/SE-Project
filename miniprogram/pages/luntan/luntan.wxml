@@ -1,4 +1,7 @@
 <!--pages/luntan/luntan.wxml-->
+<loading hidden="{{!isLoading}}">正在加载</loading>
+
+
 
 <view class="searchTab">
   <view class="pic" bindtap="turnToPersonInfo">
@@ -35,8 +38,12 @@
   </scroll-view>
 </view>
 
+<view class="noContain" wx:if="{{!isLoading && postOnPage.length==0}}">
+  ----暂时还未有相关帖子信息----
+</view>
+
 <view class="allPost">
-  <view wx:for="{{allPosts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+  <view wx:for="{{postOnPage}}" wx:for-item="item" wx:for-index="index" wx:key="index">
     <onePost item="{{item}}" data-index="{{index}}" bindtap="bindItemTap"/>
   </view>
 </view>

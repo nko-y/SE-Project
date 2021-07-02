@@ -82,9 +82,9 @@ open-data[type="userAvatarUrl"]{
 
 .itemType{
   display: inline-block;
-  width: 125rpx;
+
   height: 100%;
-  margin-left: 10rpx;
+  margin-left: 30rpx;
 }
 
 .inView{
@@ -128,4 +128,12 @@ open-data[type="userAvatarUrl"]{
   height: 100rpx;
   bottom: 40rpx;
   right: 70rpx;
+}
+
+.noContain{
+  width: 60%;
+  margin: 20rpx auto;
+  font-size: 25rpx;
+  color: #AAAAAA;
+  text-align: center;
 }

@@ -30,7 +30,8 @@
   <i class="iconfont icon-wuxupailie {{formats.list === 'bullet' ? 'ql-active' : ''}}" data-name="list" data-value="bullet"></i>
   </view>
     <!-- <image class="add_image" src="../../images/editpost/add_image.svg"></image> -->
-    <button id="Choose_board_select" type="primary" formType="submit">选择科室并提交</button>
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" id="Choose_board_select" type="primary" formType="submit">选择科室并提交</button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" id="Choose_board_select" type="primary" formType="submit"> 选择科室并提交 </button>
   </view>
 </form>
 

@@ -28,7 +28,7 @@
 
 
   <view class="bottomOnes">
-    <view class="theTime">2020-02-05</view>
+    <view class="theTime">{{item.postTime}}</view>
     <view class="theOther">
       <view class="iconText">{{item.love}}</view>
       <image class="iconImg" src="../../images/luntan/love.svg"></image>

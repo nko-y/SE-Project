@@ -7,12 +7,21 @@ Page({
     title:null,
     pcontent:null,
     type:null,
+
+    userInfo: {},
+    hasUserInfo: false,
+    canIUseGetUserProfile: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
+    if (wx.getUserProfile) {
+      this.setData({
+        canIUseGetUserProfile: true
+      })
+    }
     const platform = wx.getSystemInfoSync().platform
     const isIOS = platform === 'ios'
     this.setData({ isIOS})
@@ -187,9 +196,6 @@ Page({
     });
     console.log(this.data);
     console.log(this.data.pcontent)
-    wx.navigateTo({
-      url: `/pages/chooseboard/chooseboard?title=${this.data.title}&pcontent=${this.data.pcontent}&type=${this.data.type}`,
-    })
   },
 
   editorInputChange: function(e){
@@ -197,5 +203,37 @@ Page({
       pcontent:encodeURIComponent(e.detail.html),
     });
     console.log(this.data.pcontent)
-  }
+  },
+
+
+  getUserProfile(e) {
+    var that = this
+    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
+    // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
+    wx.getUserProfile({
+      desc: '用于完善帖子基本信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      success: (res) => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+        console.log(that.data.userInfo)
+        wx.navigateTo({
+          url: `/pages/chooseboard/chooseboard?title=${that.data.title}&pcontent=${that.data.pcontent}&type=${that.data.type}&NowUserNickName=${that.data.userInfo.nickName}&NowUserUrl=${that.data.userInfo.avatarUrl}`,
+        })
+      }
+    })
+  },
+  getUserInfo(e) {
+    var that = this
+    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
+    console.log(that.data.userInfo)
+    wx.navigateTo({
+      url: `/pages/chooseboard/chooseboard?title=${this.data.title}&pcontent=${this.data.pcontent}&type=${this.data.type}&NowUserInfo=${that.data.userInfo}`,
+    })
+  },
 })
