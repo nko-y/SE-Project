@@ -232,12 +232,14 @@ Page({
     console.log(e)
   },
 
-  // 事件处理函数
+  // 点击某个帖子的事件处理函数
   bindItemTap: function(e) {
-    if(this.data.isLoading || this.data.isAdding) return
-    console.log(e);
+    if(this.data.isLoading || this.data.isAdding) return;
+    var certainpost_id = e.currentTarget.dataset.certainpost._id;
+    // console.log(certainpost);
+    // var str = JSON.stringify(certainpost);
     wx.navigateTo({
-      url: '/pages/certainpost/certainpost?index='+e.currentTarget.dataset.index,
+      url: '/pages/certainpost/certainpost?certainpost_id=' + certainpost_id,
     });
 
   },

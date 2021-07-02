@@ -1,5 +1,8 @@
 // miniprogram/pages/certainpost.js
-var testList = require("../../Data/postData.js")
+// var testList = require("../../Data/postData.js")
+var db = wx.cloud.database()
+const cd = db.command
+
 
 Page({
 
@@ -13,11 +16,17 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    var index = options.index;
-    console.log(index); // 帖子的index
+  onLoad: async function (options) {
+    // var index = options.index;
+    // console.log(options.certainpost); // 帖子的index
+    // var certainpost = JSON.parse(options.certainpost);
+    var certainpost_id = options.certainpost_id;
+    // 从数据库得到这个帖子的内容
+    var result = await this.search_post(certainpost_id);
+    console.log(result.data[0]);
+    
     this.setData({
-      certainPost: testList.postData[index],
+      certainPost: result.data[0],
     })
   },
 
@@ -76,6 +85,12 @@ Page({
       url: '/pages/newcomment/newcomment',
     });
 
+  },
+
+  search_post: async function(certainpost_id){
+    return db.collection("post").where({
+      _id:certainpost_id
+    }).get();
   },
 
 })

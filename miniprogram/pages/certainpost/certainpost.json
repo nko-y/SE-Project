@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "oneComment":"../../components/oneComment/oneComment"
+    "oneComment":"../../components/oneComment/oneComment",
+    "wxparser": "plugin://wxparserPlugin/wxparser"
   }
 }

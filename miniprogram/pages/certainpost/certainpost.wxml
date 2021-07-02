@@ -2,26 +2,27 @@
 <view class="container">
     <!-- 标题 -->
     <view class="title">
-        <text class="title-text">{{certainPost.title}}</text>
+        <text class="title-text">{{certainPost.post_title}}</text>
     </view>
     <!-- 用户信息 -->
     <view class="userInformation">
         <view class="userPic">
-          <image src="{{certainPost.userSrc}}" class="theImg"></image>
+          <image src="{{certainPost.user_img}}" class="theImg"></image>
         </view>
         <view class="infoText">
             <view class="userName">
-                {{certainPost.userName}}
+                {{certainPost.user_name}}
             </view>
             <view class="postTime">
-                {{certainPost.postTime}}
+                {{certainPost.post_time}}
             </view>
         </view>
     </view> 
 
     <view class="post-content">
-        <text>{{certainPost.contain}}</text>
-        <image src="{{certainPost.containPic}}"></image>
+        <wxparser rich-text="{{certainPost.post_content}}" />
+        <!-- <text>{{certainPost.post_content}}</text> -->
+        <!-- <image src="{{certainPost.containPic}}"></image> -->
     </view>
 
     <view class="operation-panel">

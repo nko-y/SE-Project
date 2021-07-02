@@ -44,7 +44,7 @@
 
 <view class="allPost">
   <view wx:for="{{postOnPage}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-    <onePost item="{{item}}" data-index="{{index}}" bindtap="bindItemTap"/>
+    <onePost item="{{item}}" data-index="{{index}}" data-certainpost="{{item}}" bindtap="bindItemTap"/>
   </view>
 </view>
 
