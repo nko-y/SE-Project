@@ -198,11 +198,11 @@ Page({
     console.log(this.data.pcontent)
   },
 
-  editorInputChange: function(e){
+  editorInputChange: function(e){//对内容编码，用以解决=后面的字符串在传参时被错误处理问题
     this.setData({
       pcontent:encodeURIComponent(e.detail.html),
     });
-    console.log(this.data.pcontent)
+    //console.log(this.data.pcontent)
   },
 
 

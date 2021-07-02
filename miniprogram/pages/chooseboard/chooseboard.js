@@ -98,21 +98,26 @@ Page({
     var i=0;
     var picpath=[];
     var str=content;
+    content="";
     var rex=/<img.*?\">/;//提取图片
     var n = str.search(rex);
     var tmp,src,tmppath;
     while(n!=-1){
+      content+=str.substr(0,n);
       str=str.substr(n)
-      tmp=str.match(rex)[0];
+      tmp=str.match(rex)[0];//获取<img ……>
       src=tmp.match(/\"http.*?\"/)[0];//提取图片地址
       src=src.substr(1,src.length-2);//去除双引号
       tmppath=await this.uploadOneImage(post_id,i,src);//上传图片
-      console.log(tmppath);
-      picpath.push(tmppath.fileID); 
+      //console.log(tmppath);
+      picpath.push(tmppath.fileID); //获取云服务图片地址
       i=i+1;
       str=str.replace(rex,"")
+      tmp=tmp.replace(/\"http.*?\"/,"\""+tmppath.fileID+"\"")//将本地地址换成云图片地址
+      content+=tmp;//不直接content.replace(/\"http.*?\"/,tmppath.fileID)是防止替换掉其他超链接
       n = str.search(rex);
     }
+    console.log(content);//查看改变后的内容
     db.collection('post').add({
       data:{
         user_id: user_id,
