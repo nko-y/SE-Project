@@ -117,6 +117,7 @@ Page({
       content+=tmp;//不直接content.replace(/\"http.*?\"/,tmppath.fileID)是防止替换掉其他超链接
       n = str.search(rex);
     }
+    content+=str;//加上结尾
     console.log(content);//查看改变后的内容
     db.collection('post').add({
       data:{
