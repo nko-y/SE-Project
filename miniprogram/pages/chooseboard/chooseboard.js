@@ -91,7 +91,6 @@ Page({
     this.SendPost(app.globalData.userDocId,app.globalData.userInfo,this.data.title,this.data.type,this.data.pcontent,this.data.board);
   },
   SendPost:async function(user_id,user_name,title,type,content,board){//将帖子传送到服务器
-    //上传照片是不是要与其他部分分开？那样的话得遍历content，检测每张照片
     var uploadTime = util.formatTime(new Date());
     var that=this;
     var post_id = user_id+'/'+uploadTime;
@@ -131,7 +130,8 @@ Page({
         post_content:content,
         images:picpath,
         post_board:board,
-        love:0,
+        love:[],
+        comments:[],
         save:0,
       }
     }).then(res=>{

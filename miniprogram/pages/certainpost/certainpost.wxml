@@ -2,6 +2,8 @@
 <view class="container">
     <!-- 标题 -->
     <view class="title">
+        <text class="type-text">{{certainPost.post_type}}</text>
+        <text class="blank-text">e</text>
         <text class="title-text">{{certainPost.post_title}}</text>
     </view>
     <!-- 用户信息 -->
@@ -21,13 +23,13 @@
 
     <view class="post-content">
         <wxparser rich-text="{{certainPost.post_content}}" />
-        <!-- <text>{{certainPost.post_content}}</text> -->
-        <!-- <image src="{{certainPost.containPic}}"></image> -->
     </view>
 
     <view class="operation-panel">
-        <view class="like-icon-text">10</view>
-        <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
+        <view class="like-icon-text" bindtap="bindLoveTap">{{love_num}}</view>
+
+        <image wx:if="{{isLove}}" class="like-icon-img" src="../../images/certainpost/like_done.svg" bindtap="bindLoveTap"></image>
+        <image wx:else class="like-icon-img" src="../../images/certainpost/like.svg" bindtap="bindLoveTap"></image>
         <view style="width:25rpx"></view>
         <view class="like-icon-text" bindtap="bindCommentTap"> 评论</view>
         <image class="like-icon-img" style="padding:0rpx 8rpx 0rpx 0rpx" src="../../images/certainpost/comment.svg" bindtap="bindCommentTap"></image>
