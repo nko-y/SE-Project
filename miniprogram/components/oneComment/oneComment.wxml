@@ -5,26 +5,24 @@
 <!-- 用户信息 -->
 <view class="userInformation">
   <view class="userPic">
-    <image src="{{certainComment.userSrc}}" class="theImg"></image>
+    <image src="{{certainComment.user_img}}" class="theImg"></image>
   </view>
   <view class="infoText">
     <view class="userName">
-      {{certainComment.userName}}
+      {{certainComment.user_name}}
     </view>
     <view class="postTime">
-      {{certainComment.postTime}}
+      {{certainComment.post_time}}
     </view>
   </view>
 </view> 
 <!-- 评论内容 -->
 <view class="comment-content">
-  <text>
-    你好啊，这里是评论
-  </text>
+  <wxparser rich-text="{{certainComment.post_content}}" />
 </view>
 <!-- 点赞按钮 -->
 <view class="operation-panel">
-    <view class="like-icon-text">10</view>
+    <view class="like-icon-text">{{certainComment.love_users.length}}</view>
     <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
 </view>
 <!-- 分割线 -->

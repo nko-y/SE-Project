@@ -130,7 +130,7 @@ Page({
         post_content:content,
         images:picpath,
         post_board:board,
-        love:[],
+        love_users:[],
         comments:[],
         save:0,
       }

@@ -46,9 +46,12 @@
     </view>
 
     <view class="allComment">
+        <view wx:for="{{certainPost.comments}}" wx:for-item="item" wx:key="index">
+            <oneComment certainComment="{{item}}"/>
+        </view>
+        <!-- <oneComment certainComment="{{certainPost}}"/>
         <oneComment certainComment="{{certainPost}}"/>
-        <oneComment certainComment="{{certainPost}}"/>
-        <oneComment certainComment="{{certainPost}}"/>
+        <oneComment certainComment="{{certainPost}}"/> -->
     </view>
     
 
