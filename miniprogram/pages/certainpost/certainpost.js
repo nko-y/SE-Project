@@ -83,29 +83,29 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: async function () {
-    // this.certainpost_id = this.options.certainpost_id;
-    // // 从数据库得到这个帖子的内容
-    // var result = await this.get_post(certainpost_id);
-    // var certainpost = result.data[0];
-    // console.log(certainpost);
+    this.certainpost_id = this.options.certainpost_id;
+    // 从数据库得到这个帖子的内容
+    var result = await this.get_post(certainpost_id);
+    var certainpost = result.data[0];
+    console.log(certainpost);
     
-    // this.setData({
-    //   certainPost: certainpost,
-    //   love_num: certainpost.love_users.length,
-    // });
-    // post_title = certainpost.post_title;
-    // console.log(this.data.love_num);
-    // // 从数据库查看当前用户是否给这个帖子点赞了
-    // var love_users = certainpost.love_users;
-    // console.log(love_users);
-    // var cur_user = app.globalData.userDocId;
-    // console.log(cur_user);
-    // var isLove = this.isInArray(love_users, cur_user);
-    // console.log("isLove: "+isLove);
-    // this.setData({
-    //   isLove: isLove,
-    //   cur_user: cur_user,
-    // })
+    this.setData({
+      certainPost: certainpost,
+      love_num: certainpost.love_users.length,
+    });
+    post_title = certainpost.post_title;
+    console.log(this.data.love_num);
+    // 从数据库查看当前用户是否给这个帖子点赞了
+    var love_users = certainpost.love_users;
+    console.log(love_users);
+    var cur_user = app.globalData.userDocId;
+    console.log(cur_user);
+    var isLove = this.isInArray(love_users, cur_user);
+    console.log("isLove: "+isLove);
+    this.setData({
+      isLove: isLove,
+      cur_user: cur_user,
+    })
   },
 
   /**

@@ -22,8 +22,10 @@
 </view>
 <!-- 点赞按钮 -->
 <view class="operation-panel">
-    <view class="like-icon-text">{{certainComment.love_users.length}}</view>
-    <image class="like-icon-img" src="../../images/certainpost/like.svg"></image>
+    <view class="like-icon-text" bindtap="bindLoveTap">{{love_num}}</view>
+
+    <image wx:if="{{isLove}}" class="like-icon-img" src="../../images/certainpost/like_done.svg" bindtap="bindLoveTap"></image>
+    <image wx:else class="like-icon-img" src="../../images/certainpost/like.svg" bindtap="bindLoveTap"></image>
 </view>
 <!-- 分割线 -->
 <view class="small-padding-line">

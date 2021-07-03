@@ -207,7 +207,7 @@ Page({
   },
 
   // 将回复上传至数据库
-  SendPost: async function(user_id, user_img, user_name, content){
+  SendPost: async function(user_id, user_img, user_name, content, post_id){
     var uploadTime = util.formatTime(new Date());
     var that=this;
     var post_id = user_id+'/'+uploadTime;
@@ -235,12 +235,21 @@ Page({
     }
     content+=str;//加上结尾
     console.log(content);//查看改变后的内容
+
+    var result = await db.collection("post").where({
+      _id:certainpost_id
+    }).get();
+    var certainpost = result.data[0];
+    var len = certainpost.comments.length;
+
     db.collection('post').doc(certainpost_id).update({
       data:{
         comments: cd.push({
+          index: len,
           user_id: user_id,
           user_name: user_name,
           user_img: user_img,
+          post_id: certainpost_id,
           post_time:uploadTime,
           post_content:content,
           images:picpath,
@@ -299,7 +308,7 @@ Page({
         });
         console.log(that.data.userInfo);
         // user_id, user_img, user_name, content
-        that.SendPost(app.globalData.userDocId, that.data.userInfo.avatarUrl, that.data.userInfo.nickName, decodeURIComponent(that.data.pcontent));
+        that.SendPost(app.globalData.userDocId, that.data.userInfo.avatarUrl, that.data.userInfo.nickName, decodeURIComponent(that.data.pcontent), certainpost_id);
         // wx.navigateTo({
         //   url: `/pages/chooseboard/chooseboard?title=${that.data.title}&pcontent=${that.data.pcontent}&type=${that.data.type}&NowUserNickName=${that.data.userInfo.nickName}&NowUserUrl=${that.data.userInfo.avatarUrl}`,
         // })
