@@ -303,6 +303,7 @@ Page({
       rtData[i].userName = rtData[i].user_name
       rtData[i].userSrc = rtData[i].user_img
       rtData[i].title = rtData[i].post_title
+      rtData[i].love = rtData[i].love_users.length
       nP.push(rtData[i])
     }
     this.setData({
