@@ -108,7 +108,6 @@ Page({
       src=tmp.match(/\"http.*?\"/)[0];//提取图片地址
       src=src.substr(1,src.length-2);//去除双引号
       tmppath=await this.uploadOneImage(post_id,i,src);//上传图片
-      //console.log(tmppath);
       picpath.push(tmppath.fileID); //获取云服务图片地址
       i=i+1;
       str=str.replace(rex,"")
@@ -155,20 +154,5 @@ Page({
       filePath: imagepath,
       cloudPath: post_id+'-'+num,
     })
-    /*
-    .then(res => {//加上then就没有返回值了，会把返回值在这边处理
-      // get resource ID
-      console.log(res.fileID)
-      
-      var array=that.data.picpath
-      array.push(res.fileID)
-      that.setData({
-        picpath:array
-      })
-      
-    }).catch(error => {
-      // handle error
-    })
-    */
   },
 })

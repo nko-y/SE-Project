@@ -4,38 +4,38 @@
   <view class="section">
     <view class="tui-table-view">
       <view class="tui-col-3">
-        <image src="/images/board/pifu.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit" catchtap="checkClick" data-id="皮肤科"></image>
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/pifu.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit" catchtap="checkClick" data-id="皮肤科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/fuke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/fuke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="妇科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/erke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/erke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="儿科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/miniao.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/miniao.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="泌尿外科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/guke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/guke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="骨科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/xiaohua.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/xiaohua.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="消化内科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/kouqiang.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/kouqiang.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="口腔科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/erbi.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/erbi.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="耳鼻咽喉科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/chanke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/chanke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="产科"></image>
       </view>
     </view>
@@ -43,42 +43,42 @@
   <text class="dieases">内科</text>
   <view class="tui-table-view">
       <view class="tui-col-3">
-        <image src="/images/board/punei.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/punei.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="普通内科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/neifenmi.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/neifenmi.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="内分泌科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/xinxueguan.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/xinxueguan.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="心血管科"></image>
       </view>
   </view>
   <text class="dieases">其他</text>
   <view class="tui-table-view">
       <view class="tui-col-3">
-        <image src="/images/board/puwai.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/puwai.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="普外科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/jingshen.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/jingshen.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="精神心理科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/meirong.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/meirong.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="美容整形科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/xingbing.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/xingbing.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="性病科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/yanke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/yanke.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="眼科"></image>
       </view>
       <view class="tui-col-3">
-        <image src="/images/board/zhongliu.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
+        <image src="cloud://se-5gd09z7qd5f96662.7365-se-5gd09z7qd5f96662-1300048656/board/zhongliu.jpg"  style="width: 100%; height: 200rpx;" mode="aspectFit"
         catchtap="checkClick" data-id="肿瘤科"></image>
       </view>
   </view>
