@@ -47,7 +47,7 @@
   <view class="oneline"></view>
   <view class="oneitem" bindtap="toQuest">
     <view class="pic"><image src="../../images/wode/certQues.svg" class="oneIcon"></image></view>
-    <view class="thename">认证问卷</view>
+    <view class="thename">医师资格认证</view>
     <view class="rightword"><image class="textword" src="../../images/wode/arrow-circle-right-outline.svg"></image></view>
   </view>
   <view style="height:4rpx;"></view>
