@@ -179,17 +179,6 @@ Page({
   newPostForm: function(data){
     var type = data.detail.value.choose_type;
     var title = data.detail.value.input_title;
-    /*
-    var that=this;
-    //console.log(data);
-    this.editorCtx.getContents({
-      success(res) {
-        that.setData({
-          pcontent:res.html,
-        });
-      }
-    });
-    */
     this.setData({
       type:type,
       title:title,
@@ -218,9 +207,29 @@ Page({
           hasUserInfo: true
         })
         console.log(that.data.userInfo)
-        wx.navigateTo({
-          url: `/pages/chooseboard/chooseboard?title=${that.data.title}&pcontent=${that.data.pcontent}&type=${that.data.type}&NowUserNickName=${that.data.userInfo.nickName}&NowUserUrl=${that.data.userInfo.avatarUrl}`,
-        })
+        if(this.data.title==""){
+          wx.showToast({
+            title: '请输入帖子标题',
+            icon: 'error',
+            duration: 2000//持续的时间
+          })
+        }else if(this.data.type==""){
+          wx.showToast({
+            title: '请选择帖子类型',
+            icon: 'error',
+            duration: 2000//持续的时间
+          })
+        }else if(this.data.pcontent==null){
+          wx.showToast({
+            title: '请输入帖子内容',
+            icon: 'error',
+            duration: 2000//持续的时间
+          })
+        }else{
+          wx.navigateTo({
+            url: `/pages/chooseboard/chooseboard?title=${that.data.title}&pcontent=${that.data.pcontent}&type=${that.data.type}&NowUserNickName=${that.data.userInfo.nickName}&NowUserUrl=${that.data.userInfo.avatarUrl}`,
+          })
+        }
       }
     })
   },
