@@ -8,7 +8,9 @@
     "pages/test/test",
     "pages/personinfo/personinfo",
     "pages/certainpost/certainpost",
-    "pages/newcomment/newcomment"
+    "pages/newcomment/newcomment",
+    "pages/newpost/newpost",
+    "pages/chooseboard/chooseboard"
   ],
   "window": {
     "backgroundTextStyle": "dark",
