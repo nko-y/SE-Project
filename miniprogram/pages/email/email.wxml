@@ -1,0 +1,10 @@
+<!--miniprogram/pages/email/email.wxml-->
+<view class="all">
+<view class="title">预约信息</view>
+
+<view class="appointmentPart">
+  <view wx:for="{{allAppointments}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <oneAppointment item="{{item}}"/>
+  </view>
+</view>
+</view>

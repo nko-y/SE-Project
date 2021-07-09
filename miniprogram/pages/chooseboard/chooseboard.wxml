@@ -1,5 +1,7 @@
 <!--pages/chooseboard/chooseboard.wxml-->
-<scroll-view >
+
+<view bindtap="test">
+  <scroll-view >
   <text class="dieases">常见科室</text>
   <view class="section">
     <view class="tui-table-view">
@@ -83,3 +85,4 @@
       </view>
   </view>
 </scroll-view>
+</view>

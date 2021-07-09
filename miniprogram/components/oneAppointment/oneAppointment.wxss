@@ -1,0 +1,185 @@
+/* components/oneAppointment/oneAppointment.wxss */
+.all{
+  width: 100%;
+  height: 450rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftPart{
+  width: 20%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftPart image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.rightPart{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.onePart{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.itsname{
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.position{
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 30rpx;
+  color: black;
+}
+
+.tagFirst{
+  margin-top: 10rpx;
+  width: 60rpx;
+  height: 30rpx;
+  background-color: gold;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20rpx;
+  border-radius: 5rpx;
+}
+
+.twoPart{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.master{
+  margin-right: 20rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 25rpx;
+  color: black;
+}
+
+.threePart{
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 95%;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.fourPart{
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 95%;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.fivePart{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.starImg{
+  height: 60%;
+  width: 10%;
+}
+
+.starText{
+  margin-top: 2rpx;
+  margin-right: 15rpx;
+  font-size: 25rpx;
+  color: #FFD700;
+}
+
+.relateTagText{
+  margin-top: 2rpx;
+  margin-right: 10rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #FFD700;
+  background-color: #fef9f2
+}
+
+.sixPart{
+  width: 95%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.appointButton{
+  width: 40%;
+  height: 80%;
+  display: flex;
+  background-color: #1296db;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: white;
+}
+
+.appointButtonAcc{
+  width: 40%;
+  height: 80%;
+  display: flex;
+  background-color: #10f536;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: white;
+}

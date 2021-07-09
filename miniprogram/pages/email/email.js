@@ -1,25 +1,24 @@
-// pages/wode/wode.js
+// miniprogram/pages/email/email.js
+var appointmentList = require("../../Data/appointmentData.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    //是否已经授权登录
-    isRegister: true,
-    //信用积分值
-    allIntegral:0,
-    //是否认证
-    whetherCert:true,
-    //是否有个人信息
-    withMessage:false,
+      allAppointments:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // var temp = db.collection("Appointment").where({
+    //   doc_id: cd.eq(app.globalData.userDocId)
+    // })
+    this.setData({
+      allAppointments: appointmentList.appointmentData
+    })
   },
 
   /**
@@ -69,29 +68,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  toQuest: function(){
-    wx.navigateTo({
-      url: '../questionnaire/questionnaire',
-    })
-  },
-
-  turntoPersonalInfo: function(){
-    wx.navigateTo({
-      url: '../../pages/personinfo/personinfo',
-    })
-  },
-
-  toNotice: function(){
-    wx.navigateTo({
-      url: '../../pages/test/test',
-    })
-  },
-
-  turnToemail: function(){
-    wx.navigateTo({
-      url: '../../pages/email/email',
-    })
   }
 })

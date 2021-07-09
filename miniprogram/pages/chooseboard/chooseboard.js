@@ -82,6 +82,7 @@ Page({
   onShareAppMessage: function () {
 
   },
+  
   checkClick: async function(e){//检测点击板块
     console.log(e.target.dataset["id"]);
     this.setData({
@@ -89,6 +90,14 @@ Page({
     });
     var that=this;
     this.SendPost(app.globalData.userDocId,app.globalData.userInfo,this.data.title,this.data.type,this.data.pcontent,this.data.board);
+    // wx.showToast({
+    //   title: '帖子上传成功',
+    //   icon:"success",
+    //   duration:1000
+    // })
+    // wx.navigateBack({
+    //   delta: 2
+    // })
   },
   SendPost:async function(user_id,user_name,title,type,content,board){//将帖子传送到服务器
     var uploadTime = util.formatTime(new Date());

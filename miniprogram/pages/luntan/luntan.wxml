@@ -1,4 +1,6 @@
 <!--pages/luntan/luntan.wxml-->
+
+
 <loading hidden="{{!isLoading}}">正在加载</loading>
 
 
@@ -50,3 +52,4 @@
 
 <!-- 新建按钮 -->
 <image src="../../images/luntan/create.svg" class="fixedButton" catchtap="createNewPost"></image>
+

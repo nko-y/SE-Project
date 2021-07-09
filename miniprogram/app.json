@@ -10,7 +10,8 @@
     "pages/certainpost/certainpost",
     "pages/newcomment/newcomment",
     "pages/newpost/newpost",
-    "pages/chooseboard/chooseboard"
+    "pages/chooseboard/chooseboard",
+    "pages/email/email"
   ],
   "window": {
     "backgroundTextStyle": "dark",

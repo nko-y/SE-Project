@@ -1,0 +1,26 @@
+<!--components/oneAppointment/oneAppointment.wxml-->
+<view class="all">
+  <view class="leftPart">
+    <image src="{{item.scr}}"></image>
+  </view>
+
+
+  <view class="rightPart">
+    <view class="onePart">
+      <view class="itsname">{{item.name}}</view>
+    </view>
+
+    <view class="twoPart">
+      <view class="master">联系方式：{{item.phoneNum}}</view>
+    </view>
+
+    <view class="threePart">其他相关信息：{{item.info}}</view>
+
+    <view class="fourPart">症状描述：{{item.symptom}}</view>
+  </view>
+
+  <view class="sixPart">
+      <view wx:if="{{!hasAccept}}" class="appointButton" bindtap="acceptAppoint">接受预约</view>
+      <view wx:else class="appointButtonAcc">接受预约</view>
+    </view>
+</view>

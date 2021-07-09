@@ -50,13 +50,18 @@ Page({
     isLoading: true,
 
     //搜索框相关变量
-    inputValue: ""
+    inputValue: "",
+
+    //控制是否进入的变量
+    isIn: false,
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    
     if(this.data.isFirstIn){
       await this.doFirstIn();
     }
@@ -162,6 +167,7 @@ Page({
 
   },
 
+
   //点击上方的小标签切换页面
   changeTab: async function(e){
     if(this.data.isLoading || this.data.isAdding) return
@@ -235,6 +241,7 @@ Page({
   // 点击某个帖子的事件处理函数
   bindItemTap: function(e) {
     if(this.data.isLoading || this.data.isAdding) return;
+
     var certainpost_id = e.currentTarget.dataset.certainpost._id;
     // console.log(certainpost);
     // var str = JSON.stringify(certainpost);

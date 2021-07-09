@@ -1,0 +1,166 @@
+/* miniprogram/pages/email/email.wxss */
+/* pages/wenzhen/wenzhen.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.all{
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 80rpx;
+  border-top-left-radius: 80rpx;
+}
+
+.title{
+  width: 100%;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.search{
+  width: 95%;
+  height: 50rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10rpx;
+  border: 2rpx solid #EEEEEE;
+  background-color: white;
+}
+
+.search input{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+}
+
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-left:20rpx;
+  display: inline-block;
+  vertical-align:middle;
+  margin-right: 20rpx;
+}
+
+.quest{
+  width: 95%;
+  height: 130rpx;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftpart{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftpartimg{
+  width: 80%;
+  height: 80%;
+}
+
+.middlepart{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.middleup{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 35rpx;
+  color: black;
+  font-weight: bold;
+}
+
+.middledown{
+  width: 100%;
+  height: 45%;
+  font-size: 25rpx;
+  color: #999999;
+  font-weight: bold;
+}
+
+.rightpart{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.questButton{
+  width: 80%;
+  height: 40%;
+  background-color: #1296db;
+  color: white;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.sortLine{
+  width: 95%;
+  height: 50rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.oneSortItem{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sortText{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 25rpx;
+  color: black;
+  font-weight: bold;
+}
+
+.sortIcon{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sortIcon image{
+  width: 20%;
+  height: 80%;
+}
+
+.appointmentPart{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
