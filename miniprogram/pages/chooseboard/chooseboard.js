@@ -114,13 +114,13 @@ Page({
       content+=str.substr(0,n);
       str=str.substr(n)
       tmp=str.match(rex)[0];//获取<img ……>
-      src=tmp.match(/\"http.*?\"/)[0];//提取图片地址
+      src=tmp.match(/\"[http|wxfile].*?\"/)[0];//提取图片地址
       src=src.substr(1,src.length-2);//去除双引号
       tmppath=await this.uploadOneImage(post_id,i,src);//上传图片
       picpath.push(tmppath.fileID); //获取云服务图片地址
       i=i+1;
       str=str.replace(rex,"")
-      tmp=tmp.replace(/\"http.*?\"/,"\""+tmppath.fileID+"\"")//将本地地址换成云图片地址
+      tmp=tmp.replace(/\"[http|wxfile].*?\"/,"\""+tmppath.fileID+"\"")//将本地地址换成云图片地址
       content+=tmp;//不直接content.replace(/\"http.*?\"/,tmppath.fileID)是防止替换掉其他超链接
       n = str.search(rex);
     }
