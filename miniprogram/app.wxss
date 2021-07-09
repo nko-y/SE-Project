@@ -1,4 +1,7 @@
 /**app.wxss**/
+@import "components/GoEasyRecorder/goEasyRecorder.wxss";
+@import "components/GoEasyAudioPlayer/goEasyAudioPlayer.wxss";
+
 page{
   background-color: rgb(252, 251, 249)
 }

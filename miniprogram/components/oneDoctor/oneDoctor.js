@@ -26,6 +26,10 @@ Component({
       })
     },
 
-    
+    toCommunit: function(){
+      wx.navigateTo({
+        url: '../../pages/login/login',
+      })
+    } 
   }
 })

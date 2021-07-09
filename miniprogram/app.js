@@ -1,4 +1,6 @@
 // app.js
+import GoEasy from './static/lib/goeasy-2.0.12.min';
+
 App({
   onLaunch() {
     if(!wx.cloud){
@@ -40,9 +42,16 @@ App({
         }
       }
     })
+    wx.goEasy = GoEasy.getInstance({
+      host:'hangzhou.goeasy.io',//应用所在的区域地址: [hangzhou.goeasy.io, 新加坡暂不支持IM，敬请期待]
+      appkey: 'BC-adebf342e8834842958a4e3feca476d5',// common key
+      modules:["im"]
+    });
+    wx.GoEasy = GoEasy;
   },
   globalData: {
     userInfo: null,
-    userDocId: ''           //用户的唯一指定ID
+    userDocId: '',           //用户的唯一指定ID
+    service: null,
   }
 })

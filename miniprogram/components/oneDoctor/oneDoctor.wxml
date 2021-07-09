@@ -1,6 +1,6 @@
 <!--components/oneDoctor/oneDoctor.wxml-->
 <view class="all">
-  <view class="leftPart">
+  <view class="leftPart" bindtap="toCommunit">
     <image src="{{item.docScr}}"></image>
   </view>
 
