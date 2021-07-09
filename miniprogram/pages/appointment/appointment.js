@@ -101,9 +101,15 @@ Page({
     }
 
     //提交申请
-
+    wx.showToast({
+      title: '预约发送成功',
+      icon:'none',
+      duration:2000
+    })
     this.setData({
       opAble: true
     })
+
+    
   }
 })
