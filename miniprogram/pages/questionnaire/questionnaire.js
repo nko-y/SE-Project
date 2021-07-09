@@ -283,8 +283,8 @@ Page({
         doctor_applyTime: finTime,
         doctor_createId: app.globalData.userDocId,
         doctor_iscertify: false,
-        doctor_isFirstClass: true,
-        doctor_score: 0,
+        doctor_isFirstClass: false,
+        doctor_score: "5.00",
         doctor_tag: []
       }
     }).then(res=>{

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "oneDoctor": "../../components/oneDoctor/oneDoctor"
-  }
+  },
+  "enablePullDownRefresh": true
 }

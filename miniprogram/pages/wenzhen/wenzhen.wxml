@@ -1,5 +1,7 @@
 <!--pages/wenzhen/wenzhen.wxml-->
 
+<loading hidden="{{!isLoading}}">正在加载</loading>
+
 <view class="search">
   <image src="../../images/luntan/search.svg"></image>
   <input type='text' placeholder='疾病、医院、科室、医生' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='clickSearch' bindinput=""></input>
@@ -15,7 +17,7 @@
     <view class="middledown">无需选科 自由提问 互帮互助</view>
   </view>
   <view class="rightpart">
-    <view class="questButton">前去提问</view>
+    <view class="questButton" bindtap="toNewPost">前去提问</view>
   </view>
 </view>
 
@@ -32,7 +34,7 @@
     <view class="sortIcon"><image src="../../images/wenzhen/tri.svg"></image></view>
   </view>
     <view class="oneSortItem">
-    <view class="sortText">科室</view>
+    <picker class="sortText" range="{{departArray}}" bindchange="departSort">{{departNowValue}}</picker>
     <view style="width:5%"></view>
     <view class="sortIcon"><image src="../../images/wenzhen/tri.svg"></image></view>
   </view>
@@ -44,7 +46,7 @@
 </view>
 
 <view class="doctorPart">
-  <view wx:for="{{allDoctors}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+  <view wx:for="{{doctorOnPage}}" wx:for-item="item" wx:for-index="index" wx:key="index">
     <oneDoctor item="{{item}}"/>
   </view>
 </view>
